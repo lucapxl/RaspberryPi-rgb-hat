@@ -8,7 +8,7 @@ It's a modified version of the original code <https://github.com/YahboomTechnolo
 
 This script depends on some python ```Adafruit``` libraries that can be installed with the following command
 
-```bash
+```Shell
 sudo pip3 install Adafruit_BBIO Adafruit-GPIO Adafruit-PureIO Adafruit-SSD1306
 ```
 
@@ -24,7 +24,7 @@ WorkingDirectory=/home/pi/rgb-hat           # Replace this with the actual scrip
 
 copy or 'ln -s' the rgb-hat.service file into ```/etc/systemd/system/```
 
-```bash
+```Shell
 # Either
 sudo cp rgb-cooling-hat.py /etc/systemd/system/
 # ... OR
@@ -35,7 +35,7 @@ sudo ln -s /home/pi/rgb-hat/rgb-hat.service /etc/systemd/system/
 
 To Start and Stop the service use
 
-```bash
+```Shell
 # Start
 sudo systemctl start rgb-hat.service
 # Stop
@@ -44,9 +44,11 @@ sudo systemctl stop rgb-hat.service
 
 To enable/disable auto start of service during boot
 
-```bash
+```Shell
 # Enable auto start
 sudo systemctl enable rgb-hat.service
 # Disable auto start
 sudo systemctl disable rgb-hat.service
 ```
+
+## Known issues
